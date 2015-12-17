@@ -1,0 +1,86 @@
+﻿	/* DIV */
+
+#boite{
+	height: 100%;
+	width: 100%;
+}
+
+#droite{
+	height:94%;
+	width:18%;
+	float : right;
+}
+
+#gauche{
+	height:94%;
+	width:18%;
+	float : left;
+
+}
+
+#milieu{
+	height:100%;
+	width:64%;
+	margin-left: 18%;
+}
+
+#connexion
+{
+	text-align: center;
+	margin-top: 75px;
+}
+
+/* DIV AVEC IMAGES */
+
+#droite > img
+{
+	right : 0px;
+	background-repeat : no-repeat;
+	position : fixed;
+	bottom : 4%;
+	height : 92%;
+}
+
+#gauche > img
+{
+	left: 0px;
+	background-repeat : no-repeat;
+	position : fixed;
+	height : 92%;
+	bottom: 4%;
+}
+	
+#panorama > img
+{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin-bottom: 55px;
+}
+
+/* MENU */
+
+#menu  li
+{
+    display:inline-block;
+	color:  #0000b3;
+	
+}
+
+#menu a{
+   text-decoration:none; 
+}
+
+#menu #active a
+{
+	color: red;	
+}
+
+/* LISTES SPECIALES */
+
+#enregistrer li
+{
+    display:inline-block;
+	padding: 7px;
+	
+}
