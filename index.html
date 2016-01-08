@@ -2,50 +2,89 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="author" content="Mathis SLIMANI - Nicolas PIETRAC" />
+	<meta name="description" content="Site web NFL, projet WEB IUT Lyon 1" />
+	<meta name="keywords" content="NFL, IUT, Lyon 1, Football Américain, Superbowl" />
+	<meta name="generator" content="Notepad ++" />
 	<link rel="shortcut icon" href="img/nfl_logo30.png">
 	<title>National Football League</title>
 	<link rel="stylesheet" type="text/css" href="monstyle.css" media="all"/>
-
-
 </head>
 
 <body>
-	<div id="boite">
-		<div id="droite">
-			<img src="img/club1.jpg" alt="Les premiers clubs" >
-		</div> <!-- /imgdroite -->
+			
+	<header>	<!-- EN TETE AVEC MENU ET IMAGE -->		
+		<div id="menu">				
+			<div class="dropdown" style="float:left;">
+				<div class="dropbtn">
+					<p><img src="img/nfl_logo30.png" alt="dropbtn"/></p>
+					<p>Navigation</p>
+				</div>
 
-		<div id="gauche">
-			<img src="img/club2.jpg" alt="Les autres clubs" >
-		</div> <!-- /imggauche -->
-
-
-			<!-- LE MENU -->
+				<div class="dropdown-content" style="left:0;">				
+					<a href="index.html" id="active">Accueil</a>
+					<a href="championnat.html">Championnat</a>
+					<a href="attaque.html">Attaque</a>
+					<a href="defense.html">Défense</a>
+					<a href="mvp.html">MVP</a>
+					<a href="draft.html">Draft</a>
+					<a href="superbowl.html">SuperBowl</a>
+					<a href="connexion.html">Connexion</a>
+					<a href="enregistrer.html">S'enregistrer</a>
+				</div>
+			</div>
+		</div>
 		
-		<div id="milieu">
-			<div id="menu">
+		<div id="debut">
+			<img src="img/panorama.jpg" alt="Panorama"/>
+		</div>
+	</header>
+		
+	<section> <!-- CORPS DE TEXTE -->
+		<article>
+			<h1> Présentation du site </h1>
+				
+			<p> Ceci est un site créé par des étudiants de DUT Informatique avec pour but de vous faire découvrir le football américain. Sport très
+			répendu aux Etats-Unis, mais beaucoup moins en France, il est pourtant très intéressant et agréable à regarder. C'est pourquoi nous
+			avons choisi de dédier un site à ce sport. <br>
+			Nous vous présenterons donc :</p>
 				<ul>
-					<li id="active"><a href="index.html">Accueil</a></li>
-				   <li><a href="regles.html">Règles</a></li>
-				   <li><a href="championnat.html">Championnat</a></li>
-				   <li><a href="mvp.html">MVP</a></li>
-				   <li><a href="draft.html">Draft</a></li>
-				   <li><a href="superbowl.html">SuperBowl</a></li>
-				   <li><a href="connexion.html">Connexion</a></li>
-				   <li><a href="enregistrer.html">S'enregistrer</a></li>
+					<li><a href="regles.html">Les Règles</a></li>
+					<li><a href="championnat.html">Le Déroulement du Championnat</a></li>
+					<li><a href="mvp.html">La notion de MVP</a></li>
+					<li><a href="draft.html">Le système de Draft</a></li>
+					<li><a href="superbowl.html">Le SuperBowl</a></li>
+					<li><a href="defense.html">La Défense</a></li>
 				</ul>
+			</article>
+			
+		<article>
+			<h1> Présentation du sport </h1>
+
+			<p>Le football américain est un sport collectif opposant deux équipes de onze joueurs, où les deux équipes alternent entre la défense
+			et l'attaque. Le but du jeu est de marquer des points en portant ou lançant le ballon jusqu'à la zone d'en-but adverse. Pour conserver la
+			possession, l'équipe attaquante doit parcourir au moins 10 yards en 4 tentatives (appelées « down »). Dans le même temps, l'équipe en
+			défense doit empêcher l'attaque d'atteindre cet objectif, dans le but de reprendre la possession de la balle. Si l'équipe attaquante
+			valide 10 yards ou plus lors de sa possession, elle bénéficie de quatre nouvelles tentatives pour continuer à gagner du terrain. Sinon,
+			la possession de la balle change de camp, et les rôles (défense/attaque) s'inversent.</p>
+
+			<p>Les points peuvent être marqués de différentes façons, en franchissant la ligne de but avec le ballon, en lançant la balle à un autre joueur
+			situé de l'autre côté de la ligne de but, en plaquant le porteur du ballon de l'équipe adverse dans sa propre zone d'en-but (safety) ou en
+			tirant au pied le ballon entre les poteaux du but adverse. Le vainqueur est l'équipe ayant marqué le plus de points à la fin du match.
+			</p>
+			
+			<div class="panorama">
+				<img src="img/brady.jpg" alt="Tom Brady" id="img"/>
 			</div>
 			
-			<p>
-				<div id="panorama">
-					<img src="img/panorama.jpg" alt="Panorama"/>
-				</div>
-			</p>
-		
-			<p> Texte au milieu bonjour bonjour bonjour</p>
+		</article>
+	</section>
+	
+	<footer> <!-- PIED DE PAGE -->
+		Copyright © 2016 -  <a href="apropos.html">A propos</a>.
+	</footer>
 
-		</div>
-	</div>
 </body>
 
 </html>

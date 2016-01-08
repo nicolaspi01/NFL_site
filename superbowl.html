@@ -2,49 +2,126 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="author" content="Mathis SLIMANI - Nicolas PIETRAC" />
+	<meta name="description" content="Site web NFL, projet WEB IUT Lyon 1" />
+	<meta name="keywords" content="NFL, IUT, Lyon 1, Football Américain, Superbowl" />
+	<meta name="generator" content="Notepad ++" />
 	<link rel="shortcut icon" href="img/nfl_logo30.png">
 	<title>National Football League</title>
 	<link rel="stylesheet" type="text/css" href="monstyle.css" media="all"/>
-
-
 </head>
 
 <body>
-	<div id="boite">
-		<div id="droite">
-			<img src="img/club1.jpg" alt="Les premiers clubs" >
-		</div> <!-- /imgdroite -->
-
-		<div id="gauche">
-			<img src="img/club2.jpg" alt="Les autres clubs" >
-		</div> <!-- /imggauche -->
-
-
-			<!-- LE MENU -->
-		<div id="milieu">
-
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-				   <li><a href="regles.html">Règles</a></li>
-				   <li><a href="championnat.html">Championnat</a></li>
-				   <li><a href="mvp.html">MVP</a></li>
-				   <li><a href="draft.html">Draft</a></li>
-				   <li id="active"><a href="superbowl.html">SuperBowl</a></li>
-				   <li><a href="connexion.html">Connexion</a></li>
-				   <li><a href="enregistrer.html">S'enregistrer</a></li>
-				</ul>
-			</div>
 			
-			<p>
-				<div id="panorama">
-					<img src="img/panorama.jpg" alt="Panorama"/>
+	<header>	<!-- EN TETE AVEC MENU ET IMAGE -->		
+		<div id="menu">				
+			<div class="dropdown" style="float:left;">
+				<div class="dropbtn">
+					<p><img src="img/nfl_logo30.png" alt="dropbtn"/></p>
+					<p>Navigation</p>
 				</div>
-			</p>
-		
-			<p>blablablablablablablablablablablablablablablablablablablablabla SUPER BEAUF</p>
-		</div>
-	</div>
-</body>
 
+				<div class="dropdown-content" style="left:0;">				
+					<a href="index.html" id="active">Accueil</a>
+					<a href="championnat.html">Championnat</a>
+					<a href="attaque.html">Attaque</a>
+					<a href="defense.html">Défense</a>
+					<a href="mvp.html">MVP</a>
+					<a href="draft.html">Draft</a>
+					<a href="superbowl.html">SuperBowl</a>
+					<a href="connexion.html">Connexion</a>
+					<a href="enregistrer.html">S'enregistrer</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="debut">
+			<img src="img/panorama.jpg" alt="Panorama"/>
+		</div>
+	</header>
+	
+	<section>
+		<h1>Le Superbowl</h1>
+		
+		<p>Le Super Bowl est la finale du championnat de football américain qui voit s'affronter les vainqueurs des deux conférences pour le titre
+		de champion de la NFL. C'est l’événement sportif le plus regardé aux États-Unis.</p>
+		<p>Cette année, le Superbowl aura lieu dans le magnifique nouveau stade des 49ers, à savoir le Levi's Stadium.</p>
+
+		<div class="panorama">
+			<img src="img/levis.jpg" alt="Stade" id="img"/>
+		</div>
+		
+		<article>
+			<h2>Palmarès</h2>
+
+			<p>Voici le palmarès du Superbowl des 5 dernières années:</p>
+
+			<table id="tab1">
+				<tr>
+					<th>Année</th>
+					<th>Superbowl</th>
+					<th>Vainqueur</th>
+					<th>Score</th>
+					<th>Finaliste</th>
+					<th>Lieu</th>
+				</tr>
+				<tr>
+					<th>Saison 2010</th>
+					<td>XLV</td>
+					<td>Packers de Green Bay</td>
+					<td>31-25</td>
+					<td>Steelers de Pittsburgh</td>
+					<td>Texas</td>
+				</tr>
+				<tr>
+					<th>Saison 2011</th>
+					<td>XLVI</td>
+					<td>Giants de New York</td>
+					<td>21-17</td>
+					<td>Patriots de la Nouvelle-Angleterre</td>
+					<td> Indiana</td>
+				</tr>
+				<tr>
+					<th>Saison 2012</th>
+					<td>XLVII</td>
+					<td>Ravens de Baltimore</td>
+					<td>31-34</td>
+					<td>49ers de San Fransisco</td>
+					<td>Louisianne</td>
+				</tr>
+				<tr>
+					<th>Saison 2013</th>
+					<td>XLVIII</td>
+					<td>Seehawks de Seattle</td>
+					<td>31-8</td>
+					<td>Broncos de Denver</td>
+					<td>New Jersey</td>
+				</tr>
+				<tr>
+					<th>Saison 2014</th>
+					<td>XLIX</td>
+					<td>Patriots de la Nouvelle-Angleterre</td>
+					<td>28-24</td>
+					<td>Seehawks de Seattle</td>
+					<td>Arizona</td>
+				</tr>
+			</table>
+		</article>
+		
+		<article>
+			<h2>Moment mémorable</h2>
+			<p>Les Superbowls se jouent souvent à des détails, sur une action parfois. Ce fut le cas lors du dernier Superbowl notamment, où la victoire
+			se joua sur une interception des Patriots.</p>
+
+			<div class="panorama">
+				<video src="img/interception.mp4" controls width="600" id="video"></video>
+			</div>
+		</article>
+	</section>	
+	
+	<footer>
+		Copyright © 2016 -  <a href="apropos.html">A propos</a>.
+	</footer>
+</body>
 </html>

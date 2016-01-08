@@ -2,49 +2,104 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="author" content="Mathis SLIMANI - Nicolas PIETRAC" />
+	<meta name="description" content="Site web NFL, projet WEB IUT Lyon 1" />
+	<meta name="keywords" content="NFL, IUT, Lyon 1, Football Américain, Superbowl" />
+	<meta name="generator" content="Notepad ++" />
 	<link rel="shortcut icon" href="img/nfl_logo30.png">
 	<title>National Football League</title>
 	<link rel="stylesheet" type="text/css" href="monstyle.css" media="all"/>
-
-
 </head>
 
 <body>
-	<div id="boite">
-		<div id="droite">
-			<img src="img/club1.jpg" alt="Les premiers clubs" >
-		</div> <!-- /imgdroite -->
-
-		<div id="gauche">
-			<img src="img/club2.jpg" alt="Les autres clubs" >
-		</div> <!-- /imggauche -->
-
-
-			<!-- LE MENU -->
-		<div id="milieu">
-
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-				   <li><a href="regles.html">Règles</a></li>
-				   <li id="active"><a href="championnat.html">Championnat</a></li>
-				   <li><a href="mvp.html">MVP</a></li>
-				   <li><a href="draft.html">Draft</a></li>
-				   <li><a href="superbowl.html">SuperBowl</a></li>
-				   <li><a href="connexion.html">Connexion</a></li>
-				   <li><a href="enregistrer.html">S'enregistrer</a></li>
-				</ul>
-			</div>
 			
-			<p>
-				<div id="panorama">
-					<img src="img/panorama.jpg" alt="Panorama"/>
+	<header>	<!-- EN TETE AVEC MENU ET IMAGE -->		
+		<div id="menu">				
+			<div class="dropdown" style="float:left;">
+				<div class="dropbtn">
+					<p><img src="img/nfl_logo30.png" alt="dropbtn"/></p>
+					<p>Navigation</p>
 				</div>
-			</p>
-		
-			<p>blablablablablablablablablablablablablablablablablablablablabla L'CHAMPIONNAAAT</p>
-		</div>
-	</div>
-</body>
 
+				<div class="dropdown-content" style="left:0;">				
+					<a href="index.html" id="active">Accueil</a>
+					<a href="championnat.html">Championnat</a>
+					<a href="attaque.html">Attaque</a>
+					<a href="defense.html">Défense</a>
+					<a href="mvp.html">MVP</a>
+					<a href="draft.html">Draft</a>
+					<a href="superbowl.html">SuperBowl</a>
+					<a href="connexion.html">Connexion</a>
+					<a href="enregistrer.html">S'enregistrer</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="debut">
+			<img src="img/panorama.jpg" alt="Panorama"/>
+		</div>
+	</header>
+	
+	<section>
+		<h1>Organisation du championnat NFL</h1>
+
+			<p>En premier lieu, il faut savoir que les équipes sont divisées en divisions et conférences.</p>
+			<p>Il existe 2 conférences, la NFC et l’AFC qui disposent de 16 équipes chacune. A la base, ces deux groupes étaient deux championnats
+			distincts (NFL et AFL) ayant fusionné à la fin des années 60. Les champions de chaque conférence se rencontrent pour le match final qu’est
+			le Super Bowl.</p>
+
+		<article>
+			<h2>Les équipes de la NFC et de l'AFC</h2>
+				<div class="panorama">
+					<img src="img/nflteams.jpg" alt="nfl" id="img"/>
+				</div>
+			<p>Ces deux conférences sont subdivisées en quatre divisions chacune (Nord, Sud, Est, Ouest). Remporter le titre de sa division est le
+			premier objectif d’une saison, car il qualifie automatiquement une équipe pour les playoffs, la seconde partie de la saison.</p>
+		</article>
+		
+		<article>
+			<h2>SAISON REGULIERE</h2>				
+			<p>Après la draft, les camps d’entrainement et les 4 matchs de pré-saison, vient le moment de la saison régulière.</p>
+			<p>La saison régulière dure 17 semaines au cours desquelles chaque équipe dispute 16 matchs. Chaque équipe dispose donc d’une semaine de repos
+			au cours de la saison régulière. Au cours d’une saison, une équipe rencontre deux fois les autres équipes de sa division. Elle rencontre
+			aussi les équipes d’une division de sa conférence associée à sa division pour la saison. Par exemple, toutes les équipes de la NFC Est
+			rencontreront une fois les équipes de la NFC Nord. Chaque division se voit également associée à une division de la conférence opposée. Par
+			exemple, toutes les équipes de la NFC Est rencontreront une fois les équipes de l’AFC Sud. Les deux autres matchs opposent l’équipe aux
+			clubs de la même conférence ayant terminé à la même place la saison précédente (1er contre 1er, 2e contre 2e etc).
+			</p>
+			<p>Par exemple, en 2009, les Green Bay Packers ont rencontré deux fois les équipes de leur division NFC Nord (Bears, Vikings et Lions) soit
+			6 matchs. Une fois les équipes de la NFC Ouest (Cardinals, Seahawks, 49ers, Rams), une fois les équipes de l’AFC Nord (Steelers, Browns,
+			Ravens, Bengals) ainsi que les Cowboys et les Buccaneers. Soit un total de 16 matchs. Le compte en bon.</p>
+		</article>
+			
+		<article>	
+			<h2>PLAY OFFS</h2>			
+			<p>Douze équipes (6 par conférence) sont qualifiées pour les play-offs, tournoi final à élimination directe. Dans chaque conférence, il
+			s’agit des 4 champions de division, plus les deux meilleures équipes. En cas d’égalité au nombre de victoires, les critères de départage
+			sont nombreux, mais contrairement à d’autres sports, le goal-average n’est pas un critère prioritaire. Le premier tour (wild card) voit le
+			3e meilleur champion accueillir la moins bonne des non championnes, et le 4e champion accueille la meilleure des non championnes. Les
+			vainqueurs passent au second tour (conference demi-finals) affronter les équipes les mieux classées qui ont bénéficié d’une semaine de
+			repos. Les gagnants se rencontrent lors des finales de Conférence. Enfin, les champions de Conférence se rencontrent, en terrain neutre,
+			pour le Super Bowl.</p>	
+			
+			<div class="panorama">
+				<img src="img/playoffs.jpg" alt="nfl" id="playoff"/>
+			</div>
+		</article>
+
+		<article>
+			<h2>PRO BOWL</h2>			
+			<p>C’est l’équivalent du All Star Game de la NBA ou NHL. Le public vote pour les titulaires des équipes de la NFC et AFC, les coachs
+			choisissent les remplaçants. Le match se joue en général une semaine après le Super Bowl à Hawaï dans la détente et la bonne humeur. Des
+			changements dans les dates pourraient avoir lieu. Pour un test en 2010, le Pro Bowl a été joué dans la semaine précédant le Superbowl à
+			Miami. Etre un « Pro Bowler », c’est un honneur qui figure en bonne place sur le CV d’un joueur. Le Pro Bowl marque la fin de la saison et
+			le début d’une longue attente de la saison à venir…</p>
+		</article>
+	</section>
+			
+	<footer>
+		Copyright © 2016 -  <a href="apropos.html">A propos</a>.
+	</footer>
+</body>
 </html>

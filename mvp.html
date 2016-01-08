@@ -2,49 +2,101 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="author" content="Mathis SLIMANI - Nicolas PIETRAC" />
+	<meta name="description" content="Site web NFL, projet WEB IUT Lyon 1" />
+	<meta name="keywords" content="NFL, IUT, Lyon 1, Football Américain, Superbowl" />
+	<meta name="generator" content="Notepad ++" />
 	<link rel="shortcut icon" href="img/nfl_logo30.png">
 	<title>National Football League</title>
 	<link rel="stylesheet" type="text/css" href="monstyle.css" media="all"/>
-
-
 </head>
 
 <body>
-	<div id="boite">
-		<div id="droite">
-			<img src="img/club1.jpg" alt="Les premiers clubs" >
-		</div> <!-- /imgdroite -->
-
-		<div id="gauche">
-			<img src="img/club2.jpg" alt="Les autres clubs" >
-		</div> <!-- /imggauche -->
-
-
-			<!-- LE MENU -->
-		<div id="milieu">
-
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-				   <li><a href="regles.html">Règles</a></li>
-				   <li><a href="championnat.html">Championnat</a></li>
-				   <li id="active"><a href="mvp.html">MVP</a></li>
-				   <li><a href="draft.html">Draft</a></li>
-				   <li><a href="superbowl.html">SuperBowl</a></li>
-				   <li><a href="connexion.html">Connexion</a></li>
-				   <li><a href="enregistrer.html">S'enregistrer</a></li>
-				</ul>
-			</div>
 			
-			<p>
-				<div id="panorama">
-					<img src="img/panorama.jpg" alt="Panorama"/>
+	<header>	<!-- EN TETE AVEC MENU ET IMAGE -->		
+		<div id="menu">				
+			<div class="dropdown" style="float:left;">
+				<div class="dropbtn">
+					<p><img src="img/nfl_logo30.png" alt="dropbtn"/></p>
+					<p>Navigation</p>
 				</div>
-			</p>
-		
-			<p>blablablablablablablablablablablablablablablablablablablablabla M VI PI</p>
-		</div>
-	</div>
-</body>
 
+				<div class="dropdown-content" style="left:0;">				
+					<a href="index.html" id="active">Accueil</a>
+					<a href="championnat.html">Championnat</a>
+					<a href="attaque.html">Attaque</a>
+					<a href="defense.html">Défense</a>
+					<a href="mvp.html">MVP</a>
+					<a href="draft.html">Draft</a>
+					<a href="superbowl.html">SuperBowl</a>
+					<a href="connexion.html">Connexion</a>
+					<a href="enregistrer.html">S'enregistrer</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="debut">
+			<img src="img/panorama.jpg" alt="Panorama"/>
+		</div>
+	</header>
+	
+	<section>	
+		<h1>Le MVP</h1>
+		<p>Le National Football League Most Valuable Player Award (Prix du meilleur joueur de la NFL) est remis chaque année par différentes
+		  organisations, en particulier par l'Associated Press1, au meilleur joueur (Most Valuable Player) de football américain de la saison de
+		  la National Football League.</p>
+		<h2>Le palmarès du MVP remis par l'Associated Press des 5 dernières années</h2>
+		<table id="tab1">
+			<tr>
+					<th>Année</th>
+					<th>Vainqueur</th>
+					<th>Poste</th>
+					<th>Equipe</th>
+			</tr>
+			<tr>
+					<th>Saison 2010</th>
+					<td>Tom Brady</td>
+					<td>Quaterback</td>
+					<td>Patriots de la Nouvelle-Angleterre</td>
+			</tr>
+			<tr>
+					<th>Saison 2011</th>
+					<td>Aaron Rodgers</td>
+					<td>Quaterback</td>
+					<td>Packers de Green Bay</td>
+			</tr>
+			<tr>
+					<th>Saison 2012</th>
+					<td>Adrian Peterson</td>
+					<td>Running back</td>
+					<td>Vikings du Minnesota</td>
+			</tr>
+			<tr>
+					<th>Saison 2013</th>
+					<td>Peyton Manning</td>
+					<td>Quaterback</td>
+					<td>Broncos de Denver</td>
+			</tr>
+			<tr>
+					<th>Saison 2014</th>
+					<td>Aaron Rodgers</td>
+					<td>Quaterback</td>
+					<td>Packers de Green Bay</td>
+			</tr>
+		</table>
+
+		<p>Comme on peut le voir, les quaterbacks sont majoritairement représentés dans les joueurs gagnant le titre de MVP. Mais il ne faut
+		pas en oublier les autres joueurs qui sont tous aussi importants, comme le receveur vedette des Giants de New-York, Odell Beckam JR.</p>
+		
+			<div class="panorama">
+				<img src="img/odell.jpg" alt="Odell"/>
+			</div>
+		
+	</section>		
+	
+	<footer>
+		Copyright © 2016 -  <a href="apropos.html">A propos</a>.
+	</footer>		
+</body>
 </html>

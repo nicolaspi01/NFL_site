@@ -2,49 +2,78 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="author" content="Mathis SLIMANI - Nicolas PIETRAC" />
+	<meta name="description" content="Site web NFL, projet WEB IUT Lyon 1" />
+	<meta name="keywords" content="NFL, IUT, Lyon 1, Football Américain, Superbowl" />
+	<meta name="generator" content="Notepad ++" />
 	<link rel="shortcut icon" href="img/nfl_logo30.png">
 	<title>National Football League</title>
 	<link rel="stylesheet" type="text/css" href="monstyle.css" media="all"/>
-
-
 </head>
 
 <body>
-	<div id="boite">
-		<div id="droite">
-			<img src="img/club1.jpg" alt="Les premiers clubs" >
-		</div> <!-- /imgdroite -->
-
-		<div id="gauche">
-			<img src="img/club2.jpg" alt="Les autres clubs" >
-		</div> <!-- /imggauche -->
-
-
-			<!-- LE MENU -->
-		<div id="milieu">
-
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-				   <li><a href="regles.html">Règles</a></li>
-				   <li><a href="championnat.html">Championnat</a></li>
-				   <li><a href="mvp.html">MVP</a></li>
-				   <li id="active"><a href="draft.html">Draft</a></li>
-				   <li><a href="superbowl.html">SuperBowl</a></li>
-				   <li><a href="connexion.html">Connexion</a></li>
-				   <li><a href="enregistrer.html">S'enregistrer</a></li>
-				</ul>
-			</div>
 			
-			<p>
-				<div id="panorama">
-					<img src="img/panorama.jpg" alt="Panorama"/>
+	<header>	<!-- EN TETE AVEC MENU ET IMAGE -->		
+		<div id="menu">				
+			<div class="dropdown" style="float:left;">
+				<div class="dropbtn">
+					<p><img src="img/nfl_logo30.png" alt="dropbtn"/></p>
+					<p>Navigation</p>
 				</div>
-			</p>
-		
-			<p>blablablablablablablablablablablablablablablablablablablablabla DRAFTENT</p>
-		</div>
-	</div>
-</body>
 
+				<div class="dropdown-content" style="left:0;">				
+					<a href="index.html" id="active">Accueil</a>
+					<a href="championnat.html">Championnat</a>
+					<a href="attaque.html">Attaque</a>
+					<a href="defense.html">Défense</a>
+					<a href="mvp.html">MVP</a>
+					<a href="draft.html">Draft</a>
+					<a href="superbowl.html">SuperBowl</a>
+					<a href="connexion.html">Connexion</a>
+					<a href="enregistrer.html">S'enregistrer</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="debut">
+			<img src="img/panorama.jpg" alt="Panorama"/>
+		</div>
+	</header>
+			
+	<section>	
+		<h1>La draft</h1>
+		<p>Pour ceux qui connaissent la NHL ou la NBA, pas besoin d’expliquer, c’est LE grand moment de stress si votre équipe favorite a manqué
+			sa saison. Pour les autres, expliquons. Car c’est l’organisation sportive assez spéciale des USA qui impose un tel système.</p>
+
+		<h2>Qu'est-ce que c'est?</h2>
+		<p>Avant tout, il faut savoir qu’il existe avant la NBA, la NHL ou la NFL un grand championnat qu’est la NCAA, le championnat universitaire
+		où dans la grande majorité des cas les jeunes joueurs complètent et achèvent leur formation. Certaines universités sont prestigieuses
+		selon les sports, ainsi North Carolina, Duke ou Georgetown sont parmi le must au basket. Au foot c’est Notre Dame, UCLA ou les fameux
+		Trojans d’USC.</p>
+		<p>Après avoir achevé sa formation (3-4 ans) ou l’ayant baclé (1-2 ans), les jeunes athlètes se déclarent disponibles pour jouer au niveau
+		supérieur. Ils deviennent éligibles pour être choisi par une équipe pro. C’est tout sauf un jeu de hasard, car parmis la masse de
+		joueurs qui se présente à la draft, les équipes pro connaissent déjà par coeur les meilleurs éléments grâce à leurs recruteurs (Scouts).
+		Tout au long de l’année, dans les journaux (ou blogs), les journalistes (ou blogers) tentent aussi de prédire qui ira où dans des
+		Draft fictives.</p>
+		<p>Arrive alors le moment de la draft qui se déroule sur 4 jours (du jeudi au dimanche). En direct, les équipes vont se partager les
+		meilleurs jeunes du marché, l’objectif étant pour chaque franchise de renforcer ses points faibles.</p>
+
+		<div class="panorama">
+		 <img src="img/draft.jpg" alt="Draft" id="img"/>
+		</div>
+		 	
+		<p>L’ordre de la draft est l’ordre inverse du classement de la saison précédente: la plus mauvaise équipe obtient le premier choix au 1er
+		tour, tandis que le vainqueur du Super Bowl obtient le dernier choix du même tour. Il va de même sur les 6 tours suivants. Avant,
+		pendant ou après la draft, les équipes s’échangent leurs choix style selon leurs envies ou leurs besoins. Si une équipe est très
+		intéressée par un joueur, elle peut par exemple monter un échange avec une équipe qui sélectionne plus haut. Elle peut par exemple
+		lui offrir deux choix un peu plus éloignés contre son choix élevé.</p>
+		<p>La draft, est un petit spectacle à elle seule. Chacun des joueurs sélectionnés au début de la Draft montent sur le podium pour serrer
+		la main du commissionner et recevoir le maillot et la casquette de son équipe. Les chaines détentrices des droits aux Etats-Unis
+		montent de vrais show bardés de spécialistes autour de cet événement qui est une des grandes fêtes de l’inter-saison.</p>
+	</section>		
+		<footer>
+			Copyright © 2016 -  <a href="apropos.html">A propos</a>.
+		</footer>	
+</body>
 </html>

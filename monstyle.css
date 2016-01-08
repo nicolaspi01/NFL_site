@@ -1,79 +1,49 @@
-﻿	/* DIV */
 
-#boite{
-	height: 100%;
-	width: 100%;
+	/* DIV ET DIVERS */
+body
+{
+	margin-left: 3%;	/* pour ne pas que le texte soit collé à gauche */
+	margin-right: 3%;	/* pour ne pas que le texte soit collé à droite */
+	background-color: #f9f9f9; 
 }
 
-#droite{
-	height:94%;
-	width:18%;
-	float : right;
+article
+{
+	margin-top: 14px;
 }
 
-#gauche{
-	height:94%;
-	width:18%;
-	float : left;
-
+p
+{
+	text-align : justify;	
+	margin: 8px;
 }
 
-#milieu{
-	height:100%;
-	width:64%;
-	margin-left: 18%;
+footer 
+{
+	display: block;
+	text-align: center;
+	border-top: 2px solid #f0f0f5;	
+	margin-top: 15px;
+}
+
+a 
+{
+	color: black; /* supprimer la couleur bleue des liens */
+	text-decoration: none;	/* supprimer le sous lignage des liens */
 }
 
 #connexion
 {
-	text-align: center;
-	margin-top: 75px;
+  position: relative; /* on positionne le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  text-align: left;
 }
 
-/* DIV AVEC IMAGES */
-
-#droite > img
+#textecentre
 {
-	right : 0px;
-	background-repeat : no-repeat;
-	position : fixed;
-	bottom : 4%;
-	height : 92%;
-}
-
-#gauche > img
-{
-	left: 0px;
-	background-repeat : no-repeat;
-	position : fixed;
-	height : 92%;
-	bottom: 4%;
-}
-	
-#panorama > img
-{
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	margin-bottom: 55px;
-}
-
-/* MENU */
-
-#menu  li
-{
-    display:inline-block;
-	color:  #0000b3;
-	
-}
-
-#menu a{
-   text-decoration:none; 
-}
-
-#menu #active a
-{
-	color: red;	
+  text-align: center;
 }
 
 /* LISTES SPECIALES */
@@ -83,4 +53,155 @@
     display:inline-block;
 	padding: 7px;
 	
+}
+
+/* TEXTE */
+
+h1
+{
+	color : #e60000;
+	font-size: 200%;
+	margin : 0px;	
+}
+
+h2
+{
+	color:  #ff0000;
+	font-size: 153%;	
+	margin: 0px;	
+}
+
+#video{
+	display: block;
+/*   padding: auto; */
+	margin: auto;
+}
+
+h3
+{
+  font-weight: bold;
+  color:  #ff0000;
+ }
+ 
+th,td,tr
+{
+    text-decoration: none;
+    border-style: solid;
+    border-width:2pt;
+    padding: 2px;
+}
+  
+th
+{
+    background-color:crimson;
+    color:black;
+    font-family:Arial;
+}
+
+#tab1{
+	margin: auto;
+  }
+
+/* SITE ODINATEUR */
+
+@media (min-width: 980px)
+{
+	
+	
+	#debut > img /* l'image fait 100% de la taille de l'écran, donc on la redimensionne */
+	{
+		max-width: 100%;
+		display: block;
+		margin-bottom: 55px;
+		
+	}
+	#menu a /* les liens du menu */
+	{
+		color:  #0000b3;
+		text-decoration:none;
+		padding-right: 9px;
+	}
+
+ 	.dropbtn /* ne pas afficher le bouton et le texte de la version mobile quand on est sur PC */
+	{
+		display: none;
+	}
+
+	#menu /* le menu a une marge de 20% par rapport à la gauche */
+	{
+		padding-left: 20%;
+	}
+	
+	.panorama > img 
+	{
+		max-width: 100%;
+		max-height: 100%;
+		display: block;
+		margin-bottom: 35px;
+		text-align: center;	/* on centre toutes les images */
+		margin: auto;
+
+	}
+}
+
+/* MENU AUTE QUE ORDINATEUR : téléphones, tablettes... */
+@media (max-width: 980px)
+{
+
+	#debut > img
+	{
+		max-width: 95%;
+		display: block;
+		margin-bottom: 45px;		
+	}
+
+	img
+	{
+		max-width: 90%;
+		display: block;
+		margin-bottom: 55px;
+		margin: 0;
+		text-align: center;
+	}
+
+	.dropdown 
+	{
+		position: relative;
+		width: 200px;
+	}
+	
+	.dropdown p /* l'image du menu et le texte */
+	{
+		display: inline-block; /* sont cote à cote */
+		color:  #ff0000;
+		padding-left: 20px;
+	}
+
+	.dropdown-content/* ce qui descend */
+	{
+		display: none;
+		position: absolute;
+		right: 0;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(1,1,1,0.5); /* l'ombre */
+		background-color: #f9f9f9; /* la couleur du fond du menu qui descend */
+	}
+
+	.dropdown-content a /* le texte du menu */
+	{
+		color: blue;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover /* la case du texte du men uquand on passe dessus */
+	{
+		background-color:  #ffcccc
+	}
+
+	.dropdown:hover .dropdown-content 
+	{
+		display: block;
+	}
 }

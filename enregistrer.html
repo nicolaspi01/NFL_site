@@ -2,68 +2,61 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="author" content="Mathis SLIMANI - Nicolas PIETRAC" />
+	<meta name="description" content="Site web NFL, projet WEB IUT Lyon 1" />
+	<meta name="keywords" content="NFL, IUT, Lyon 1, Football Américain, Superbowl" />
+	<meta name="generator" content="Notepad ++" />
 	<link rel="shortcut icon" href="img/nfl_logo30.png">
 	<title>National Football League</title>
 	<link rel="stylesheet" type="text/css" href="monstyle.css" media="all"/>
-
-
 </head>
 
 <body>
-	<div id="boite">
-		<div id="droite">
-			<img src="img/club1.jpg" alt="Les premiers clubs" >
-		</div> <!-- /imgdroite -->
-
-		<div id="gauche">
-			<img src="img/club2.jpg" alt="Les autres clubs" >
-		</div> <!-- /imggauche -->
-
-
-			<!-- LE MENU -->
-		
-		<div id="milieu">
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-				   <li><a href="regles.html">Règles</a></li>
-				   <li><a href="championnat.html">Championnat</a></li>
-				   <li><a href="mvp.html">MVP</a></li>
-				   <li><a href="draft.html">Draft</a></li>
-				   <li><a href="superbowl.html">SuperBowl</a></li>
-				   <li><a href="connexion.html">Connexion</a></li>
-				   <li id="active"><a href="enregistrer.html">S'enregistrer</a></li>
-				</ul>
-			</div>
 			
-			<p>
-				<div id="panorama">
-					<img src="img/panorama.jpg" alt="Panorama"/>
+	<header>	<!-- EN TETE AVEC MENU ET IMAGE -->		
+		<div id="menu">				
+			<div class="dropdown" style="float:left;">
+				<div class="dropbtn">
+					<p><img src="img/nfl_logo30.png" alt="dropbtn"/></p>
+					<p>Navigation</p>
 				</div>
-			</p>
-		
-			<div id="enregistrer">
-				<fieldset>
 
-					<legend>Vos informations</legend> 
-						<ul>
-							<li>Nom:&nbsp;<input></li>
-							<li>Prénom :&nbsp;<input></li>
-							<li>Mot de passe :&nbsp;<input type="password"></li>
-							<li>Adresse mail :&nbsp;<input type="email"></li>
-							<li>Sexe :&nbsp;<select>
-									<option>Homme</option>
-									<option>Femme</option></li>
-								</select>
-							<li><a href="bravoenregist.html"><button>S'enregistrer</button></li>
-						</ul>
-				</fieldset>
-	
- 
-				 
-
+				<div class="dropdown-content" style="left:0;">				
+					<a href="index.html" id="active">Accueil</a>
+					<a href="championnat.html">Championnat</a>
+					<a href="attaque.html">Attaque</a>
+					<a href="defense.html">Défense</a>
+					<a href="mvp.html">MVP</a>
+					<a href="draft.html">Draft</a>
+					<a href="superbowl.html">SuperBowl</a>
+					<a href="connexion.html">Connexion</a>
+					<a href="enregistrer.html">S'enregistrer</a>
+				</div>
+			</div>
 		</div>
+		
+		<div id="debut">
+			<img src="img/panorama.jpg" alt="Panorama"/>
+		</div>
+	</header>		
+	
+	<div id="enregistrer">
+	<fieldset>
+		<legend>Vos informations</legend> 
+		<ul>
+			<li>Nom:&nbsp;<input></li>
+			<li>Prénom :&nbsp;<input></li>
+			<li>Mot de passe :&nbsp;<input type="password"></li>
+			<li>Adresse mail :&nbsp;<input type="email"></li>
+			<li>Sexe :&nbsp;
+				<select>
+					<option>Homme</option>
+					<option>Femme</option>
+				</select></li>
+			</ul>
+			<form action="bravoenregist.html"><input type="submit" value="Enregistrer"></form>		
+	</fieldset>		 
 	</div>
 </body>
-
 </html>
